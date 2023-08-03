@@ -1,0 +1,9 @@
+# lanchain
+python-dotenv
+pytesseract
+Pillow
+pypdfium2
+streamlit
+multiprocessing
+pandas
+requests
