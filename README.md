@@ -1,7 +1,8 @@
 # FaturitAI
 analizo comprobantes en pdf o imagen y parseo con ia
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nhKaqCLsPJE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Prueba de analisis automatico de factura](http://img.youtube.com/vi/nhKaqCLsPJE/0.jpg)](http://www.youtube.com/watch?v=nhKaqCLsPJE)
+
 
 
 1. upload de una facatura o comprobante en PDF o Imagen
