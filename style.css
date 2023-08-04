@@ -1,0 +1,15 @@
+textarea, .stTextArea {
+    display: none;
+}
+[data-testid="stMarkdownContainer"] h2 {
+    color:white;
+    text-shadow: 1px 1px 2px #010101;
+}
+
+[data-testid="stHeader"] {
+    background: transparent;
+}
+
+[data-testid="stAppViewContainer"] {
+    background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+}

@@ -126,9 +126,13 @@ def extract_structured_data(content: str, data_points):
 def main():
     """ streamlit """
 
-    st.set_page_config(page_title="FacturitAI", page_icon=":croissant:")
+    st.set_page_config(page_title="FacturitAI", page_icon=":croissant:", layout="wide")
 
-    st.header("Extrae el contenido de tu facturita")
+    with open('style.css') as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
+
+    st.header("Extrae el contenido de la factura")
 
     default_data_points = """{
         "invoice_item": "what is the item that charged",
@@ -141,11 +145,11 @@ def main():
     }"""
 
     data_points = st.text_area(
-        "template de los datos a extraer", value=default_data_points, height=180
+        "template de los datos a extraer", value=default_data_points, height=180, label_visibility="hidden"
     )
 
     uploaded_files = st.file_uploader(
-        "upload de Factura en pdf", accept_multiple_files=True
+        "Cargar Factura en pdf o imagen", accept_multiple_files=True, 
     )
 
     if uploaded_files is not None and data_points is not None:
